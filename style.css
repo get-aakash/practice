@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font: 1.5rem;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    display: grid;
+    
+    grid-template-areas: "a b c";
+}
+.wrapper >*{
+    height: 75px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "d d d"
+    "e e e"
+    ;
+}
+.container1{
+    display: grid;
+    grid-template-areas: 
+    "f f f"
+
+    ;
+
+}
+.container >*{
+    height: 75px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container1{
+    background: black;
+    grid-area: f;
+    height: 5px;
+}
+
+.container1 >*{
+    height: 75px;
+    display: grid;  
+}
+
+.header{
+    background: blue;
+    grid-area: a;
+}
+.heading1{
+    background: black;
+    color: white;
+    grid-area: b;
+}
+.banner{
+    background: radial-gradient(blue, red);
+    grid-area: c;
+}
+.recent{
+    font-style: italic;
+    font-size: 50px;
+    background: white;
+    grid-area: d;
+}
+.aakash{
+    font-size: 75px;
+    font-style: italic;
+    background: white;
+    grid-area: e;
+}
+.img1{
+    grid-area: f;
+    
+}
+.img2{
+    grid-area: g;
+}
+.img > *{
+    background: no-repeat center center;
+    height: 500px;
+    width: 700px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+        display: grid;
+        grid-template-areas: 
+        "f g"
+        
+        ;
+    
+}
+.img-head1{
+    grid-area: ih1;
+    background: yellow;
+    
+}
+.img-head2{
+    
+    
+    margin-left: 650px;
+    
+    grid-area: ih2;
+    background: pink;
+    
+}
+.img > *{
+    justify-content: center;
+    align-items: center;
+}
+.img-head{
+    padding-top: 2px;
+    padding-left: 200px;
+    font-size: 30px;
+    height: 5vh;
+    width: 150px;
+    display: grid;
+    grid-template-areas: 
+        "ih1 ih2"
+        
+        ;
+}
