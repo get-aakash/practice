@@ -1,10 +1,4 @@
-*{
-    box-sizing: border-box;
-    font: 1.5rem;
-}
-body{
-    margin: 0;
-}
+
 .wrapper{
     display: grid;
     
@@ -12,6 +6,7 @@ body{
 }
 .wrapper >*{
     height: 75px;
+    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -33,6 +28,7 @@ body{
 }
 .container >*{
     height: 75px;
+    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -84,46 +80,73 @@ body{
 .img > *{
     background: no-repeat center center;
     height: 500px;
-    width: 700px;
+    width: 100%;
     display: grid;
-    justify-content: space-between;
-    align-items: center;
+    background-size:cover;
+    
+    
 }
 .img{
         display: grid;
+        gap: 5px;
+        background-color: black;
         grid-template-areas: 
         "f g"
-        
+        "ih1 ih2"
+        "p1 p2"
+        "mf mf"
         ;
     
 }
 .img-head1{
     grid-area: ih1;
     background: yellow;
+    height: 50px;
+    
+    justify-content: center;
+    align-items: center;
     
 }
 .img-head2{
-    
-    
-    margin-left: 650px;
-    
     grid-area: ih2;
     background: pink;
+    height: 50px;
     
+    /* justify-content: center;
+    align-items: center;
+    margin-left: 10px;     */
 }
 .img > *{
     justify-content: center;
     align-items: center;
 }
-.img-head{
-    padding-top: 2px;
-    padding-left: 200px;
-    font-size: 30px;
-    height: 5vh;
-    width: 150px;
-    display: grid;
-    grid-template-areas: 
-        "ih1 ih2"
-        
-        ;
+.para2{
+    grid-area: p2;
+    height: 90px;
+    background: white
+    ;
+}
+
+.para1{
+    grid-area: p1;
+    height: 90px;
+    background: white;
+    
+}
+.minifooter{
+    gap: 5px;
+    grid-area: mf;
+    background: purple;
+    height: 50px;
+    width: 100%;
+}
+.footer{
+    background: blue;
+    
+    width: 100%;
+    height: 25px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    
 }
