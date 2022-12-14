@@ -50,21 +50,21 @@
     grid-area: a;
 }
 .heading1{
-    background: black;
+    background: grey;
     color: white;
     grid-area: b;
 }
-.banner{
-    background: radial-gradient(blue, red);
+.heading2{
+    background: purple;
     grid-area: c;
 }
-.recent{
+.news{
     font-style: italic;
     font-size: 50px;
     background: white;
     grid-area: d;
 }
-.aakash{
+.letter{
     font-size: 75px;
     font-style: italic;
     background: white;
@@ -72,10 +72,15 @@
 }
 .img1{
     grid-area: f;
+    border-color: black;
+    border-style: solid;
     
 }
 .img2{
     grid-area: g;
+    border-color: black;
+    border-style: solid;
+    
 }
 .img > *{
     background: no-repeat center center;
@@ -85,11 +90,12 @@
     background-size:cover;
     
     
+    
 }
 .img{
         display: grid;
-        gap: 5px;
-        background-color: black;
+        
+        gap: 1px;
         grid-template-areas: 
         "f g"
         "ih1 ih2"
@@ -102,19 +108,20 @@
     grid-area: ih1;
     background: yellow;
     height: 50px;
-    
     justify-content: center;
     align-items: center;
+    border-color: black;
     
 }
 .img-head2{
     grid-area: ih2;
     background: pink;
     height: 50px;
-    
-    /* justify-content: center;
+    justify-content: center;
     align-items: center;
-    margin-left: 10px;     */
+    border-color: black;
+    
+   
 }
 .img > *{
     justify-content: center;
@@ -123,14 +130,17 @@
 .para2{
     grid-area: p2;
     height: 90px;
-    background: white
+    background: white;
+    
     ;
 }
 
 .para1{
     grid-area: p1;
     height: 90px;
+    
     background: white;
+    
     
 }
 .minifooter{
@@ -139,6 +149,8 @@
     background: purple;
     height: 50px;
     width: 100%;
+    border-color: black white white;
+    border-style: solid;
 }
 .footer{
     background: blue;
